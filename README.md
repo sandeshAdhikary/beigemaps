@@ -72,7 +72,7 @@ In the run command we used to train models, the ``+project=cheetah_run`` and ``+
 
 ## Logs and Outputs
 The training log files will be stored in the folder `logdir`. You can change the default logdir in the environment file definition in `src/studies/dm_control_study/.env`
-The evalution outputs (e.g. videos) and saved models will be saved in the storage folder
+The evalution outputs (e.g. videos) and saved models will be saved in the ``storage`` folder
 
 ## Advanced: Setting up SSH Storage
 You can set up the code to save outputs (videos, models, etc.) to an SSH storage. Besides storage issues, this can also be useful in defining a central storage for experiments run on multiple computers.
