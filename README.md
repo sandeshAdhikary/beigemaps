@@ -59,13 +59,13 @@ All experiment parameters are defined in config files in ``src/studies/dm_contro
 
 We've modularized experiment configs into ``studies > projects > experiments``. 
 
-1. Default Config
+1. **Default Config**
 The default_config.yaml file has all the default configs, some of which will get overwritten by the project and exp configs. 
-2. Study Configs
+2. **Study Configs**
 All experiments use the same study config dm_control_study, but you can define a new study if needed.
-3. Project Configs
+3. **Project Configs**
 Each of these config files is associated with a specific environment, e.g. ``cheetah_run.yaml``.
-4. Exp Configs
+4. **Exp Configs**
 Each of these config files is associated with a specific algorithm, e.g., ``beigemap_ksme.yaml``.
 
 In the run command we used to train models, the ``+project=cheetah_run`` and ``+exp=beigemap_ksme`` specify the project and exp config files that overwrite values in the default config.
