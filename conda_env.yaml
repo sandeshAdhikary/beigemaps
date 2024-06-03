@@ -8,7 +8,6 @@ dependencies:
   - torchvision=0.13.1=cpu_py39h164cc8f_0
   - absl-py
   - pyparsing
-  # For Optuna
   - mysqlclient
   - pip
   - pip:
@@ -42,8 +41,9 @@ dependencies:
     - einops
     - matplotlib
     - wandb
-    - optuna
-    - mo_gymnasium
+    - gymnasium
+    # - optuna
+    # - mo_gymnasium
     - scikit-learn
     - moviepy
     - nvitop

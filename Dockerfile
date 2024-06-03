@@ -25,6 +25,9 @@ RUN apt-get update \
 RUN mkdir -p /project 
 WORKDIR /project
 COPY conda_env.yaml .
+COPY setup.py /project/
+COPY src /project/
+
 
 # Install Miniconda
 RUN wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O Miniconda.sh && \
@@ -32,12 +35,8 @@ RUN wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -
         rm Miniconda.sh
 ENV PATH /opt/conda/bin:$PATH
 
-# Create a conda environment
+# Create conda environment `beigemaps'
 RUN conda env create -f conda_env.yaml -v
-
-# Install as package
-COPY setup.py .
-RUN pip install -e .
 
 # Activate the conda env
 RUN echo "source activate beigemaps" > ~/.bashrc
