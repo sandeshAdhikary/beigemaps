@@ -79,7 +79,7 @@ You can set up the code to save outputs (videos, models, etc.) to an SSH storage
 Instructions coming soon...
 
 ## Acknowledgements
-1. This codebase builds upon and uses code from https://github.com/facebookresearch/deep_bisim4control
+1. This codebase builds upon and uses code from the [Deep Bisimulation for Control](https://github.com/facebookresearch/deep_bisim4control) repo.
 2. We also use reference code for comparison models using their respective Github repo codebases: [Robust DBC](https://github.com/metekemertas/RobustBisimulation), [Reducing Approximation Gap](https://github.com/jianda-chen/RAP_distance/tree/main), [Kernel Similarity Metric](https://github.com/google-research/google-research/tree/master/ksme).
 
 ## Citation
