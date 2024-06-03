@@ -1,0 +1,11 @@
+name: KSME
+exp_mode: ???
+overrides:
+  model:
+    encoder_mode: ksme
+sweeper:
+  name: ksme
+  num_runs: 1
+  parameters:
+    trainer:
+      seed: {values: [1, 2, 3]}

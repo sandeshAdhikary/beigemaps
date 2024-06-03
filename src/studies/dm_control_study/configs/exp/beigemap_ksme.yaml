@@ -1,0 +1,18 @@
+name: BeigeMapKSME
+exp_mode: ???
+overrides:
+  model:
+    encoder_mode: beigemap_ksme
+    encoder_type: pixel_l2
+    decoder_type: pixel_l2
+  trainer:
+    env:
+      encoder_type: pixel_l2
+    eval_env:
+      encoder_type: pixel_l2
+sweeper:
+  name: BeigeMapKSME
+  num_runs: 1
+  parameters:
+    trainer:
+      seed: {values: [3]}

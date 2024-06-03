@@ -1,0 +1,14 @@
+name: ball_in_cup_catch
+desc: |
+  Ball in cup catch
+overrides:
+  trainer:
+    env:
+      domain_name: ball_in_cup
+      task_name: catch
+      img_source: null
+      action_repeat: 4
+      frame_skip: 4
+    eval_env:
+      action_repeat: 4
+      frame_skip: 4

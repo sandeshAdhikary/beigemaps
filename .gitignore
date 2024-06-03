@@ -1,0 +1,11 @@
+src/data/*
+set_env.sh
+logdir/*
+workdir/*
+arxiv/*
+*.pyc
+*.npy
+*.csv
+*.mp4
+*.png 
+*/__pycache__/

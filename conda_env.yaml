@@ -1,0 +1,50 @@
+name: beigemaps
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pytorch=1.12.1=gpu_cuda113py39h19ae3d8_1
+  - torchvision=0.13.1=cpu_py39h164cc8f_0
+  - absl-py
+  - pyparsing
+  # For Optuna
+  - mysqlclient
+  - pip
+  - pip:
+    - python-dotenv
+    - git+https://github.com/scikit-video/scikit-video.git # pip's skvideo is not compatible with new numpy
+    - altair
+    - omegaconf
+    - pandas
+    - envyaml
+    - paramiko
+    - mysql-connector-python
+    - rich
+    # - git+https://github.com/sandeshAdhikary/trainer.git
+    - lightning
+    - friendlywords
+    - pytz
+    - mujoco
+    - termcolor
+    - git+https://github.com/deepmind/dm_control.git
+    - git+https://github.com/denisyarats/dmc2gym.git
+    - opencv-python
+    - pillow==9.4.0
+    - scikit-image
+    - scikit-video
+    - tb-nightly
+    - tqdm
+    - imageio
+    - imageio-ffmpeg
+    - pygame
+    - dotmap
+    - einops
+    - matplotlib
+    - wandb
+    - optuna
+    - mo_gymnasium
+    - scikit-learn
+    - moviepy
+    - nvitop
+    - hydra-core
