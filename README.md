@@ -23,7 +23,7 @@ This is the companion website for our paper BeigeMaps: Behavioral Eigenmaps for 
    cd beigemaps
    docker build -t beigemaps .
    ```
-2. This will build an image called 'beigemaps' on your machine with the conda environment already set up. The docker-compose.yaml file defines a container (with a single GPU and appropriate volume mounts) using this remote image.
+2. This will build an image called 'beigemaps' on your machine with the conda environment already set up. The docker-compose.yaml file defines a container with a single GPU and appropriate volume mounts
    ```
    docker compose up -d
    ```
