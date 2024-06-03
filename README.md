@@ -50,6 +50,7 @@ Right now, logging is done through Weights and Biases so you'll be prompted for 
 
 ### Running Training Sweeps
 The exp config files define a sweep across multiple seeds. We keep track of sweeps using Weights and Biases. So if you run the same training command on multiple machines (but all using the same W&B credentials), W&B will keep track of the experiments that may be running elsewhere. 
+
 For example, if seed 1 is already running on some machine, we'll move on to seed 2 when the same training command is run on the same or a different machine. Also, say that the training for seed 1 was interrupted and it is currently paused. Then, running the training command above will first try to resume any paused runs before starting a new one.
 You can also adjust the sweep parameters in the exp config file to define sweeps on parameters other than the random seed.
 
