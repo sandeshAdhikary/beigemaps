@@ -68,7 +68,7 @@ Each of these config files is associated with a specific environment, e.g. ``che
 4. **Exp Configs**
 Each of these config files is associated with a specific algorithm, e.g., ``beigemap_ksme.yaml``.
 
-In the run command we used to train models, the ``+project=cheetah_run`` and ``+exp=beigemap_ksme`` specify the project and exp config files that overwrite values in the default config.
+In the command we used to train models, the ``+project=cheetah_run`` and ``+exp=beigemap_ksme`` specify the project and exp config files that overwrite values in the default config.
 
 ## Logs and Outputs
 The training log files will be stored in the folder `logdir`. You can change the default logdir in the environment file definition in `src/studies/dm_control_study/.env`
