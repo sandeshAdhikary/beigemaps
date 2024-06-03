@@ -17,7 +17,7 @@ This is the companion website for our paper BeigeMaps: Behavioral Eigenmaps for 
    ```
 
 ### With Docker
-1. We provide a Dockerfile that tries to match the machine settings used in our experiments. This is a relatively bare-bones image that has the pre-requisites of running DM control experiment.  Clone the repo, and build the Docker image. You might have to use sudo for docker commands.
+1. We provide a Dockerfile that tries to match the machine settings used in our experiments. This is a relatively bare-bones image that has the pre-requisites of running DM control experiments.  Clone the repo, and build the Docker image. You might have to use sudo for docker commands.
    ```
    git clone git@github.com:sandeshAdhikary/beigemaps.git
    cd beigemaps
