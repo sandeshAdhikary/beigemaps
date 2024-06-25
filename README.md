@@ -1,5 +1,8 @@
+# In Progress
+This repo is still under progress. You should be able to run the experiments in the current version, but we're working on making updates.
+
 # Beigemaps
-This is the companion website for our paper BeigeMaps: Behavioral Eigenmaps for Reinforcement Learning from Images (ICML, 2024).
+This is the companion repo for our paper BeigeMaps: Behavioral Eigenmaps for Reinforcement Learning from Images (ICML, 2024).
 
 ## Setup
 ### Without Docker
